@@ -9,7 +9,7 @@ def home():
 
 @app.route('/api')
 def react():
-    return time.asctime()
+    return time.strftime('%I:%M:%S%p')
 
 
 if __name__ == "__main__":

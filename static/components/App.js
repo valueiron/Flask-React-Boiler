@@ -5,7 +5,7 @@ const App = () => {
 
     return(
         <div>
-            <h1>React App</h1>
+            <p>{fetch("http://localhost:5000/api").then(response => response.text()).then(data => console.log(data))}</p>
         </div>
     )
 }
